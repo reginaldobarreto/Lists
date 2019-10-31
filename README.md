@@ -3,9 +3,13 @@
 ## Sobre o APP 
 Esse aplicativo tem como objetivo demontrar a aplicação do RecyclerView
 ## Conhecimento aplicado
-* xxxx
-* xxxx
-* xxxx
+* Butter Knife
+* Glide (Imagens)
+* Biblioteca para leitura de feeds (com.pkmmte.pkrss:pkrss:)
+* Biblioteca para leitura de feeds (com.squareup.okhttp:okhttp:)
+* Biblioteca para leitura de feeds (com.squareup.okhttp:okhttp-urlconnection:)
+* CardView
+* ReciclerView
 
 ## Screeshots
 

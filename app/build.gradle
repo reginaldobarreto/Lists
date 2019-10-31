@@ -39,4 +39,7 @@ dependencies {
     implementation 'com.squareup.okhttp:okhttp-urlconnection:1.6.0'
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
     implementation 'androidx.cardview:cardview:1.0.0'
+    /* biblioteca glide para imagens */
+    implementation 'com.github.bumptech.glide:glide:4.10.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.10.0'
 }
