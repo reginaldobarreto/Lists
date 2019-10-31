@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Lists</string>
+    <string name="btn_acessar">Acessar</string>
+    <string name="title">Title</string>
+    <string name="subtitle">SubTitle</string>
 </resources>
