@@ -1,5 +1,6 @@
 package br.com.barrsoft.lists;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +14,7 @@ import java.util.List;
 public class RecyclerAdapter extends RecyclerView.Adapter<ViewHolder> {
 
 
+    private static final String TAG = RecyclerView.class.getName();
     private List<Article> articleList;
 
     public RecyclerAdapter(List<Article> articleList) {
@@ -35,11 +37,12 @@ public class RecyclerAdapter extends RecyclerView.Adapter<ViewHolder> {
 
         Article article = articleList.get(position);
 
+
         holder.title.setText(article.getTitle());
         holder.subTitle.setText(article.getDescription());
         Glide
                 .with(holder.itemView)
-                .load(article.getImage().toString())
+                .load(article.getImage())
                 .centerCrop()
                 .into(holder.imageView);
 

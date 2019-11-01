@@ -3,13 +3,9 @@ package br.com.barrsoft.lists;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.widget.AppCompatButton;
 import androidx.recyclerview.widget.RecyclerView;
-
-import java.nio.ByteBuffer;
-
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
