@@ -1,5 +1,6 @@
 package br.com.barrsoft.lists;
 
+import android.content.Intent;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,6 +11,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.pkmmte.pkrss.Article;
 import java.util.List;
+
+import butterknife.OnClick;
 
 public class RecyclerAdapter extends RecyclerView.Adapter<ViewHolder> {
 
@@ -39,12 +42,19 @@ public class RecyclerAdapter extends RecyclerView.Adapter<ViewHolder> {
 
 
         holder.title.setText(article.getTitle());
-        holder.subTitle.setText(article.getDescription());
+        holder.subTitle.setText(article.getContent());
         Glide
                 .with(holder.itemView)
                 .load(article.getImage())
                 .centerCrop()
                 .into(holder.imageView);
+        holder.button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_VIEW, article.getSource());
+                holder.itemView.getContext().startActivity(intent);
+            }
+        });
 
     }
 
